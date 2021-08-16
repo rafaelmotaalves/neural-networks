@@ -49,8 +49,8 @@ def plot_training_error_curves(history):
     plt.show()
 
 def compute_performance_metrics(y, y_pred_class, y_pred_scores=None):
-    y = np.argmax(y, axis=1)
-    y_pred_class = np.argmax(y_pred_class, axis=1)
+    # y = np.argmax(y, axis=1)
+    # y_pred_class = np.argmax(y_pred_class, axis=1)
     accuracy = accuracy_score(y, y_pred_class)
     recall = recall_score(y, y_pred_class)
     precision = precision_score(y, y_pred_class)
